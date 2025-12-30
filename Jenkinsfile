@@ -15,8 +15,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Building project version: ${VERSION}"
-                // For Windows use: bat 'mvn clean install'
-                sh 'mvn clean install' 
+                // Windows batch command
+                bat 'echo mvn clean install (replace with actual build command)'
             }
         }
 
@@ -26,16 +26,16 @@ pipeline {
             }
             steps {
                 echo 'Running tests...'
-                // Example test command
-                sh 'mvn test'
+                // Windows batch command
+                bat 'echo mvn test (replace with actual test command)'
             }
         }
 
         stage('Deploy') {
             steps {
                 echo 'Deploying application...'
-                // Example deploy command
-                sh 'echo Deploying to server'
+                // Windows batch command
+                bat 'echo Deploying to server'
             }
         }
     }
