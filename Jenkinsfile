@@ -4,13 +4,7 @@ pipeline {
     // Define environment variables accessible by all stages
     environment {
         VERSION = '1.0.0'
-    }
-
-    // Define build tools
-    tools {
-        maven 'Maven' // Make sure this name matches your Jenkins Maven tool installation
-        jdk 'JDK'     // Make sure this matches your JDK installation name in Jenkins
-    }
+    }  
 
     // Define parameters
     parameters {
